@@ -31,3 +31,12 @@
     transform: rotate(360deg);
   }
 }
+
+/* other */
+
+.datos {
+  table-layout: fixed;
+}
+.modal-header {
+  cursor: move;
+}
