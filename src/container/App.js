@@ -8,6 +8,8 @@ function App() {
   return (
     <div className="App">
       <Header />
+
+      <div>center web compo</div>
       <Footer />
     </div>
   );
