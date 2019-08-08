@@ -10,16 +10,18 @@ class HomePage extends Component {
   }
   render() {
     return (
-      <div>
-        <Paper>
-          <Typography variant="h5" component="h3">
-            HOme page
-          </Typography>
-          <Typography component="p">
-            Paper can be used to build surface or other elements for your
-            application.
-          </Typography>
-        </Paper>
+      <div className="jumbotron">
+        <div className="container">
+          <Paper>
+            <Typography variant="h5" component="h3">
+              HOme page
+            </Typography>
+            <Typography component="p">
+              Paper can be used to build surface or other elements for your
+              application.
+            </Typography>
+          </Paper>
+        </div>
       </div>
     );
   }

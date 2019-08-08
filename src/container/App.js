@@ -1,13 +1,9 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Route, Link, BrowserRouter as Router } from "react-router-dom";
-import Header from "../component/Header/header";
-import Footer from "../component/Footer/footer";
+import { Route, Link, Switch, BrowserRouter as Router } from "react-router-dom";
 
+import MainApp from "../routing/index";
 import SignIN from "./signin";
-
-import Home from "../routing/Home/homepage";
-import Profile from "../routing/Profile/profile";
 
 class App extends Component {
   constructor(props) {
@@ -29,15 +25,11 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          <div>
-            <Header />
-
-            <Route path="/profile" component={Profile} />
-            <Route path="/home" component={Home} />
+          <Switch>
             <Route path="/signin" component={SignIN} />
-          </div>
+            <Route path="/app/" component={MainApp} />
+          </Switch>
         </Router>
-        <Footer />
       </div>
     );
   }

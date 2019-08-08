@@ -6,7 +6,6 @@ class SignIn extends Component {
     this.state = {};
 
     this.onLogin = this.onLogin.bind(this);
-    this.onLogout = this.onLogout.bind(this);
   }
 
   componentDidMount() {
@@ -28,13 +27,10 @@ class SignIn extends Component {
   };
   render() {
     return (
-      <div>
+      <div className="container">
+        <h1>Welcome to Coder HOme</h1>
         <Button color="primary" onClick={this.onLogin}>
           Login
-        </Button>{" "}
-        <Button color="secondary">Cancle</Button>{" "}
-        <Button color="danger" onClick={this.onLogout}>
-          Logout
         </Button>{" "}
       </div>
     );

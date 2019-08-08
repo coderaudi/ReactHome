@@ -116,10 +116,10 @@ export default function PrimarySearchAppBar() {
     >
       <MenuItem onClick={handleMenuClose}>
         {" "}
-        <Link to="/profile">Profile</Link>
+        <Link to="/app/coderhome/profile">Profile</Link>
       </MenuItem>
       <MenuItem onClick={handleMenuClose}>
-        <Link to="/home">My account</Link>
+        <Link to="/app/coderhome/home">Home</Link>
       </MenuItem>
       <MenuItem onClick={handleMenuClose}>
         <Link to="/signin">LogOut</Link>

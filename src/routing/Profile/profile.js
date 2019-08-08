@@ -22,8 +22,14 @@ class Profile extends Component {
 
   render() {
     return (
-      <div>
-        {this.state.isUser ? <h1>User is Login </h1> : <h2>No user </h2>}
+      <div className="jumbotron">
+        <div className="container">
+          <div>
+            {this.state.isUser ? <h1>User is Login </h1> : <h2>No user </h2>}
+          </div>
+          Paper can be used to build surface or other elements for your
+          application.
+        </div>
       </div>
     );
   }
